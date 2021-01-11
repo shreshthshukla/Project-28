@@ -1,4 +1,4 @@
-class mango{
+class Mango{
 	constructor(x,y,r)
 	{
 		var options={

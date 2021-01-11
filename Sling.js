@@ -4,7 +4,7 @@ class Sling {
         var options={
             bodyA: bodyA,
             pointB: pointB,
-            stiffness: 0.04,
+            stiffness: 0.02,
             length: 10
             }
             this.pointB = pointB;
@@ -19,7 +19,9 @@ class Sling {
         line(pointA.x,pointA.y,pointB.x,pointB.y);
     } 
     }
-    
+    attach(body){
+        this.sling.bodyA = body;
+    }
     fly(){
         this.sling.bodyA=null;
     }
